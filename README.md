@@ -8,7 +8,7 @@ Why would one want to do this?
 2. Learn about APIs
 3. Preserve common-sense templating patterns like layouts and partials
 
-## First Attempt Express-EJS-Mustache
+## First Attempt Express-EJS-Mustache (Failure)
 
 At first I tried EJS with Mustache, but this had various pros and cons
 
@@ -16,9 +16,18 @@ At first I tried EJS with Mustache, but this had various pros and cons
 1. EJS resembles rails, Mustache resembles AngularJS
 2. EJS and Mustache are 'closest to the metal' with regards JS and HTML.
 
-
 ### Cons
 1. EJS does not allow a layout template or partials
 
+## Second Attempt Express-Handlebars-Underscore
 
-## Second Attempt
+Then I tried with Handlebars and Underscore, and succeeded. 
+
+### Pros
+1. Handlebars has layouts and partials (and precompiled templates that can be served to the client if we want to teach them this step, but I don't recommend it.)
+2. Underscore looks like rails
+3. Handlebars looks like AngularJS
+
+### Cons
+1. Handlebars is a bit "abstract" but not too bad.
+
